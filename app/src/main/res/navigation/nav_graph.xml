@@ -8,16 +8,16 @@
     <fragment
         android:id="@+id/recipesFragment"
         android:name="com.asimodabas.recipes_app.RecipesFragment"
-        android:label="fragment_recipes"
+        android:label="Recipes"
         tools:layout="@layout/fragment_recipes" />
     <fragment
         android:id="@+id/favoriteRecipesFragment"
         android:name="com.asimodabas.recipes_app.FavoriteRecipesFragment"
-        android:label="fragment_favorite_recipes"
+        android:label="Favorites"
         tools:layout="@layout/fragment_favorite_recipes" />
     <fragment
         android:id="@+id/foodJokeFragment"
         android:name="com.asimodabas.recipes_app.FoodJokeFragment"
-        android:label="fragment_food_joke"
+        android:label="Joke"
         tools:layout="@layout/fragment_food_joke" />
 </navigation>
