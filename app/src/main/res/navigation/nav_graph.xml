@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+<navigation
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
@@ -7,17 +9,17 @@
 
     <fragment
         android:id="@+id/recipesFragment"
-        android:name="com.asimodabas.recipes_app.RecipesFragment"
+        android:name="com.asimodabas.recipes_app.ui.fragment.RecipesFragment"
         android:label="Recipes"
         tools:layout="@layout/fragment_recipes" />
     <fragment
         android:id="@+id/favoriteRecipesFragment"
-        android:name="com.asimodabas.recipes_app.FavoriteRecipesFragment"
+        android:name="com.asimodabas.recipes_app.ui.fragment.FavoriteRecipesFragment"
         android:label="Favorites"
         tools:layout="@layout/fragment_favorite_recipes" />
     <fragment
         android:id="@+id/foodJokeFragment"
-        android:name="com.asimodabas.recipes_app.FoodJokeFragment"
+        android:name="com.asimodabas.recipes_app.ui.fragment.FoodJokeFragment"
         android:label="Joke"
         tools:layout="@layout/fragment_food_joke" />
 </navigation>
