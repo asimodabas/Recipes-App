@@ -9,17 +9,17 @@
 
     <fragment
         android:id="@+id/recipesFragment"
-        android:name="com.asimodabas.recipes_app.ui.fragment.RecipesFragment"
+        android:name="com.asimodabas.recipes_app.ui.fragment.recipes.RecipesFragment"
         android:label="Recipes"
         tools:layout="@layout/fragment_recipes" />
     <fragment
         android:id="@+id/favoriteRecipesFragment"
-        android:name="com.asimodabas.recipes_app.ui.fragment.FavoriteRecipesFragment"
+        android:name="com.asimodabas.recipes_app.ui.fragment.favorite.FavoriteRecipesFragment"
         android:label="Favorites"
         tools:layout="@layout/fragment_favorite_recipes" />
     <fragment
         android:id="@+id/foodJokeFragment"
-        android:name="com.asimodabas.recipes_app.ui.fragment.FoodJokeFragment"
+        android:name="com.asimodabas.recipes_app.ui.fragment.foodjoke.FoodJokeFragment"
         android:label="Joke"
         tools:layout="@layout/fragment_food_joke" />
 </navigation>
