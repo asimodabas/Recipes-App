@@ -1,4 +1,4 @@
-package com.asimodabas.recipes_app
+package com.asimodabas.recipes_app.util
 
 import android.view.LayoutInflater
 import android.view.View
