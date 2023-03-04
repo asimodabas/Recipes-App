@@ -1,4 +1,4 @@
-package com.asimodabas.recipes_app.network
+package com.asimodabas.recipes_app.data.network
 
 import com.asimodabas.recipes_app.models.FoodRecipe
 import retrofit2.Response

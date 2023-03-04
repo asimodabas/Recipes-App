@@ -1,6 +1,6 @@
 package com.asimodabas.recipes_app.di
 
-import com.asimodabas.recipes_app.network.FoodRecipesApi
+import com.asimodabas.recipes_app.data.network.FoodRecipesApi
 import com.asimodabas.recipes_app.util.Constants.BASE_URL
 import dagger.Module
 import dagger.Provides
