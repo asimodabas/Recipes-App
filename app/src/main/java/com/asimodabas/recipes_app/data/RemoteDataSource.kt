@@ -1,7 +1,7 @@
 package com.asimodabas.recipes_app.data
 
 import com.asimodabas.recipes_app.data.network.FoodRecipesApi
-import com.asimodabas.recipes_app.models.FoodRecipe
+import com.asimodabas.recipes_app.model.FoodRecipe
 import retrofit2.Response
 import javax.inject.Inject
 

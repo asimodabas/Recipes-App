@@ -1,6 +1,6 @@
 package com.asimodabas.recipes_app.data.network
 
-import com.asimodabas.recipes_app.models.FoodRecipe
+import com.asimodabas.recipes_app.model.FoodRecipe
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.QueryMap

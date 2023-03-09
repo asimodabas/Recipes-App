@@ -1,4 +1,4 @@
-package com.asimodabas.recipes_app.models
+package com.asimodabas.recipes_app.model
 
 import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
