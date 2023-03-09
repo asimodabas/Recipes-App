@@ -8,7 +8,7 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import com.asimodabas.recipes_app.data.Repository
-import com.asimodabas.recipes_app.models.FoodRecipe
+import com.asimodabas.recipes_app.model.FoodRecipe
 import com.asimodabas.recipes_app.util.NetworkResult
 import kotlinx.coroutines.launch
 import retrofit2.Response
