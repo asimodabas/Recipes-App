@@ -1,4 +1,4 @@
-package com.asimodabas.recipes_app.ui.activity
+package com.asimodabas.recipes_app.ui.activity.main
 
 import android.app.Application
 import android.content.Context

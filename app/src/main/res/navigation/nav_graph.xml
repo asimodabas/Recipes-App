@@ -11,15 +11,32 @@
         android:id="@+id/recipesFragment"
         android:name="com.asimodabas.recipes_app.ui.fragment.recipes.RecipesFragment"
         android:label="Recipes"
-        tools:layout="@layout/fragment_recipes" />
+        tools:layout="@layout/fragment_recipes">
+        <action
+            android:id="@+id/action_recipesFragment_to_detailsActivity"
+            app:destination="@id/detailsActivity" />
+    </fragment>
     <fragment
         android:id="@+id/favoriteRecipesFragment"
         android:name="com.asimodabas.recipes_app.ui.fragment.favorite.FavoriteRecipesFragment"
         android:label="Favorites"
-        tools:layout="@layout/fragment_favorite_recipes" />
+        tools:layout="@layout/fragment_favorite_recipes">
+        <action
+            android:id="@+id/action_favoriteRecipesFragment_to_detailsActivity"
+            app:destination="@id/detailsActivity" />
+    </fragment>
     <fragment
         android:id="@+id/foodJokeFragment"
         android:name="com.asimodabas.recipes_app.ui.fragment.foodjoke.FoodJokeFragment"
         android:label="Joke"
         tools:layout="@layout/fragment_food_joke" />
+    <activity
+        android:id="@+id/detailsActivity"
+        android:name="com.asimodabas.recipes_app.ui.activity.details.DetailsActivity"
+        android:label="activity_details"
+        tools:layout="@layout/activity_details">
+        <argument
+            android:name="result"
+            app:argType="com.example.foody.models.Result" />
+    </activity>
 </navigation>
