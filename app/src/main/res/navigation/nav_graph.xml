@@ -37,6 +37,6 @@
         tools:layout="@layout/activity_details">
         <argument
             android:name="result"
-            app:argType="com.example.foody.models.Result" />
+            app:argType="com.asimodabas.recipes_app.model.Result" />
     </activity>
 </navigation>

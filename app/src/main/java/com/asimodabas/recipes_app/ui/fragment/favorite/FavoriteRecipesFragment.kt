@@ -6,7 +6,9 @@ import androidx.fragment.app.Fragment
 import com.asimodabas.recipes_app.R
 import com.asimodabas.recipes_app.databinding.FragmentFavoriteRecipesBinding
 import com.asimodabas.recipes_app.util.viewBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class FavoriteRecipesFragment : Fragment(R.layout.fragment_favorite_recipes) {
 
     private val binding by viewBinding(FragmentFavoriteRecipesBinding::bind)

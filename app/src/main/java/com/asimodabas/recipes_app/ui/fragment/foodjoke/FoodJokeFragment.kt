@@ -6,7 +6,9 @@ import androidx.fragment.app.Fragment
 import com.asimodabas.recipes_app.R
 import com.asimodabas.recipes_app.databinding.FragmentFoodJokeBinding
 import com.asimodabas.recipes_app.util.viewBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class FoodJokeFragment : Fragment(R.layout.fragment_food_joke) {
 
     private val binding by viewBinding(FragmentFoodJokeBinding::bind)

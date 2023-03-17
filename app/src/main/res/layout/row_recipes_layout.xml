@@ -38,7 +38,8 @@
                 <ImageView
                     android:id="@+id/recipe_imageView"
                     android:layout_width="200dp"
-                    android:layout_height="103dp"
+                    android:layout_height="100dp"
+                    loadImageFromUrl="@{result.image}"
                     android:layout_marginVertical="10dp"
                     android:layout_marginStart="10dp"
                     android:scaleType="centerCrop"
@@ -62,7 +63,7 @@
 
                 <TextView
                     android:id="@+id/description_textView"
-                    android:layout_width="187dp"
+                    android:layout_width="185dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:ellipsize="end"
