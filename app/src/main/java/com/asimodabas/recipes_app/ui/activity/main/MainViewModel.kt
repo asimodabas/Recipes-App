@@ -10,10 +10,12 @@ import androidx.lifecycle.viewModelScope
 import com.asimodabas.recipes_app.data.Repository
 import com.asimodabas.recipes_app.model.FoodRecipe
 import com.asimodabas.recipes_app.util.NetworkResult
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import retrofit2.Response
 import javax.inject.Inject
 
+@HiltViewModel
 class MainViewModel @Inject constructor(
     private val repository: Repository, application: Application
 ) : AndroidViewModel(application) {
