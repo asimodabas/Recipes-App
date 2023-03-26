@@ -1,4 +1,4 @@
-package com.asimodabas.recipes_app.data.database
+package com.asimodabas.recipes_app.data.database.entities
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
