@@ -12,6 +12,7 @@ import com.asimodabas.recipes_app.adapter.RecipesAdapter
 import com.asimodabas.recipes_app.databinding.FragmentRecipesBinding
 import com.asimodabas.recipes_app.ui.activity.main.MainViewModel
 import com.asimodabas.recipes_app.util.NetworkResult
+import com.asimodabas.recipes_app.util.observeOnce
 import com.asimodabas.recipes_app.util.viewBinding
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
@@ -39,7 +40,7 @@ class RecipesFragment : Fragment(R.layout.fragment_recipes) {
 
     private fun readDatabase() {
         lifecycleScope.launch {
-            mainViewModel.readRecipes.observe(viewLifecycleOwner) { database ->
+            mainViewModel.readRecipes.observeOnce(viewLifecycleOwner) { database ->
                 if (database.isNotEmpty()) {
                     mAdapter.setData(database.first().foodRecipe)
                     hideShimmerEffect()
