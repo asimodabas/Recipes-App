@@ -22,8 +22,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
+            android:layout_marginTop="5dp"
             app:cardCornerRadius="10dp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
@@ -37,9 +37,9 @@
 
                 <ImageView
                     android:id="@+id/recipe_imageView"
+                    loadImageFromUrl="@{result.image}"
                     android:layout_width="200dp"
                     android:layout_height="100dp"
-                    loadImageFromUrl="@{result.image}"
                     android:layout_marginVertical="10dp"
                     android:layout_marginStart="10dp"
                     android:scaleType="centerCrop"
