@@ -13,30 +13,26 @@
         android:label="Recipes"
         tools:layout="@layout/fragment_recipes">
         <action
-            android:id="@+id/action_recipesFragment_to_detailsActivity"
-            app:destination="@id/detailsActivity" />
+            android:id="@+id/action_recipesFragment_to_recipesBottomSheet"
+            app:destination="@id/recipesBottomSheet" />
     </fragment>
     <fragment
         android:id="@+id/favoriteRecipesFragment"
         android:name="com.asimodabas.recipes_app.ui.fragment.favorite.FavoriteRecipesFragment"
         android:label="Favorites"
-        tools:layout="@layout/fragment_favorite_recipes">
-        <action
-            android:id="@+id/action_favoriteRecipesFragment_to_detailsActivity"
-            app:destination="@id/detailsActivity" />
-    </fragment>
+        tools:layout="@layout/fragment_favorite_recipes" />
     <fragment
         android:id="@+id/foodJokeFragment"
         android:name="com.asimodabas.recipes_app.ui.fragment.foodjoke.FoodJokeFragment"
         android:label="Joke"
         tools:layout="@layout/fragment_food_joke" />
-    <activity
-        android:id="@+id/detailsActivity"
-        android:name="com.asimodabas.recipes_app.ui.activity.details.DetailsActivity"
-        android:label="activity_details"
-        tools:layout="@layout/activity_details">
-        <argument
-            android:name="result"
-            app:argType="com.asimodabas.recipes_app.model.Result" />
-    </activity>
+    <dialog
+        android:id="@+id/recipesBottomSheet"
+        android:name="com.asimodabas.recipes_app.ui.fragment.recipes.bottomsheet.RecipesBottomSheet"
+        android:label="recipes_bottom_sheet"
+        tools:layout="@layout/recipes_bottom_sheet">
+        <action
+            android:id="@+id/action_recipesBottomSheet_to_recipesFragment"
+            app:destination="@id/recipesFragment" />
+    </dialog>
 </navigation>
