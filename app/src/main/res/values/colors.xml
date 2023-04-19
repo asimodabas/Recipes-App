@@ -10,4 +10,20 @@
     <color name="yellow">#FFC107</color>
     <color name="red">#FF0000</color>
     <color name="green">#89FF00</color>
+
+    <color name="lightGray">#F9F9F9</color>
+    <color name="mediumGray">#D1D1D1</color>
+    <color name="darkGray">#4B4B4B</color>
+
+    // Custom Chip Style
+    <color name="checkedChipBackgroundColor">#206200EA</color>
+    <color name="checkedChipTextColor">@color/purple_500</color>
+    <color name="chipBackgroundColor">@color/lightGray</color>
+    <color name="chipTextColor">@color/darkGray</color>
+
+    // Custom BottomNavigationView Style
+    <color name="bottomNavBackground">@color/white</color>
+    <color name="bottomNavItemColor">@color/darkGray</color>
+    <color name="bottomNavCheckedItemColor">@color/purple_500</color>
+
 </resources>

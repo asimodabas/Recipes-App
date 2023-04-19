@@ -15,12 +15,19 @@
         <action
             android:id="@+id/action_recipesFragment_to_recipesBottomSheet"
             app:destination="@id/recipesBottomSheet" />
+        <action
+            android:id="@+id/action_recipesFragment_to_detailsActivity"
+            app:destination="@id/detailsActivity" />
     </fragment>
     <fragment
         android:id="@+id/favoriteRecipesFragment"
         android:name="com.asimodabas.recipes_app.ui.fragment.favorite.FavoriteRecipesFragment"
         android:label="Favorites"
-        tools:layout="@layout/fragment_favorite_recipes" />
+        tools:layout="@layout/fragment_favorite_recipes">
+        <action
+            android:id="@+id/action_favoriteRecipesFragment_to_detailsActivity"
+            app:destination="@id/detailsActivity" />
+    </fragment>
     <fragment
         android:id="@+id/foodJokeFragment"
         android:name="com.asimodabas.recipes_app.ui.fragment.foodjoke.FoodJokeFragment"
@@ -35,4 +42,13 @@
             android:id="@+id/action_recipesBottomSheet_to_recipesFragment"
             app:destination="@id/recipesFragment" />
     </dialog>
+    <activity
+        android:id="@+id/detailsActivity"
+        android:name="com.asimodabas.recipes_app.ui.activity.details.DetailsActivity"
+        android:label="Details"
+        tools:layout="@layout/activity_details">
+        <argument
+            android:name="result"
+            app:argType="com.asimodabas.recipes_app.model.Result" />
+    </activity>
 </navigation>
