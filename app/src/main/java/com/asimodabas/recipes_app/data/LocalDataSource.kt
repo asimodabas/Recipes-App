@@ -2,7 +2,9 @@ package com.asimodabas.recipes_app.data
 
 import com.asimodabas.recipes_app.data.database.RecipesDao
 import com.asimodabas.recipes_app.data.database.entities.RecipesEntity
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.withContext
 import javax.inject.Inject
 
 class LocalDataSource @Inject constructor(
@@ -14,6 +16,8 @@ class LocalDataSource @Inject constructor(
     }
 
     suspend fun insertRecipes(recipesEntity: RecipesEntity) {
-        recipesDao.insertRecipes(recipesEntity)
+        withContext(Dispatchers.IO) {
+            recipesDao.insertRecipes(recipesEntity)
+        }
     }
 }
